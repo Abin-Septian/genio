@@ -1,12 +1,14 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify/lib'
 import colors from 'vuetify/lib/util/colors'
+import '@mdi/font/css/materialdesignicons.css'
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 Vue.use(Vuetify)
 
 const options = {
   theme: {
-    dark: true,
+    dark: false,
     themes: {
       light: {
         primary: colors.lightBlue.base,
@@ -15,12 +17,12 @@ const options = {
         error: colors.red.base,
         warning: colors.deepOrange.base,
         info: colors.cyan.base,
-        success: colors.green.base
-      }
-    }
+        success: colors.green.base,
+      },
+    },
   },
   icons: {
-    iconfont: 'md', // default - only for display purposes
+    iconfont: 'mdi', // default - only for display purposes
   },
 }
 

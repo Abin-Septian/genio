@@ -1,22 +1,21 @@
 <template>
   <v-app id="inspire">
-    <navigation-drawer></navigation-drawer>
-    <app-bar></app-bar>
+    <navigation-drawer />
+    <app-bar />
 
     <v-content>
       <v-container fluid scroll-region>
-        <flash-messages></flash-messages>
-        <slot/>
+        <flash-messages />
+        <slot />
       </v-container>
     </v-content>
-
   </v-app>
 </template>
 
 <script>
 
 export default {
-  name: "Layout",
+  name: 'Layout',
   data() {
     return {
       showUserMenu: false,
